@@ -1,0 +1,26 @@
+{
+  "name": "Workspace-defaults demonstration (not paper-verified)",
+  "algorithm": "rule_based",
+  "fatigue_aware": false,
+  "simulator_config": {
+    "health_levels": 3,
+    "habituation_levels": 4,
+    "episode_length": 28,
+    "discount_factor": 0.99,
+    "p_respond_sleep": 0.6,
+    "p_respond_activity": 0.5,
+    "p_respond_stress": 0.55,
+    "p_habituation_increase": 0.3,
+    "p_habituation_decay": 0.2,
+    "habituation_attenuation_rate": 0.25,
+    "min_response_probability": 0.1,
+    "p_drift_sleep": 0.1,
+    "p_drift_activity": 0.1,
+    "p_drift_stress": 0.1,
+    "initial_habituation": 0
+  },
+  "algorithm_config": {},
+  "n_eval_episodes": 100,
+  "n_replications": 2,
+  "base_seed": 42
+}

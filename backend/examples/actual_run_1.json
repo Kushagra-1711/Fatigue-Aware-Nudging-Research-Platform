@@ -1,0 +1,408 @@
+﻿{
+    "id":  1,
+    "name":  "Reference run",
+    "description":  null,
+    "status":  "completed",
+    "error_message":  null,
+    "algorithm":  "rule_based",
+    "fatigue_aware":  false,
+    "simulator_config":  {
+                             "health_levels":  3,
+                             "habituation_levels":  4,
+                             "episode_length":  28,
+                             "discount_factor":  0.99,
+                             "p_respond_sleep":  0.6,
+                             "p_respond_activity":  0.5,
+                             "p_respond_stress":  0.55,
+                             "p_habituation_increase":  0.3,
+                             "p_habituation_decay":  0.2,
+                             "habituation_attenuation_rate":  0.25,
+                             "min_response_probability":  0.1,
+                             "p_drift_sleep":  0.1,
+                             "p_drift_activity":  0.1,
+                             "p_drift_stress":  0.1,
+                             "initial_sleep":  null,
+                             "initial_activity":  null,
+                             "initial_stress":  null,
+                             "initial_habituation":  0
+                         },
+    "algorithm_config":  {
+                             "convergence_tol":  1E-06,
+                             "max_iterations":  1000,
+                             "epsilon":  0.1,
+                             "n_episodes":  50000,
+                             "epsilon_decay":  0.9999,
+                             "min_epsilon":  0.01,
+                             "learning_rate":  0.1,
+                             "lr_decay":  1.0
+                         },
+    "n_training_episodes":  1000,
+    "n_eval_episodes":  100,
+    "n_replications":  2,
+    "base_seed":  42,
+    "mean_discounted_return":  14.181993490467564,
+    "ci_95_lower":  12.056770915188562,
+    "ci_95_upper":  16.307216065746566,
+    "mean_health_score":  0.5704022988505747,
+    "mean_response_rate":  0.30267004489879035,
+    "mean_habituation":  1.904655172413793,
+    "mean_nudges":  23.75,
+    "created_at":  "2026-10-21T17:07:14.659696",
+    "started_at":  "2026-10-21T17:07:14.672851",
+    "completed_at":  "2026-10-21T17:07:20.257906",
+    "version":  "1.0.0",
+    "evaluation":  {
+                       "algorithm":  "Rule-Based",
+                       "fatigue_aware":  false,
+                       "n_replications":  2,
+                       "n_episodes_per_replication":  100,
+                       "mean_discounted_return":  14.181993490467564,
+                       "ci_95_lower":  12.056770915188562,
+                       "ci_95_upper":  16.307216065746566,
+                       "std_discounted_return":  0.23653944284428316,
+                       "mean_health_score":  0.5704022988505747,
+                       "mean_nudges_per_episode":  23.75,
+                       "mean_nudge_fraction":  0.8482142857142857,
+                       "mean_response_rate":  0.30267004489879035,
+                       "mean_habituation":  1.904655172413793,
+                       "replication_results":  [
+                                                   {
+                                                       "replication_id":  0,
+                                                       "seed":  100042,
+                                                       "n_episodes":  100,
+                                                       "mean_discounted_return":  14.014734846414283,
+                                                       "std_discounted_return":  5.59475663670127,
+                                                       "mean_health_score":  0.5628160919540229,
+                                                       "std_health_score":  0.2262445286307891,
+                                                       "mean_nudges":  23.54,
+                                                       "mean_nudge_fraction":  0.8407142857142859,
+                                                       "mean_response_rate":  0.29625676575161025,
+                                                       "mean_habituation":  1.87
+                                                   },
+                                                   {
+                                                       "replication_id":  1,
+                                                       "seed":  110042,
+                                                       "n_episodes":  100,
+                                                       "mean_discounted_return":  14.349252134520844,
+                                                       "std_discounted_return":  5.497485651432401,
+                                                       "mean_health_score":  0.5779885057471265,
+                                                       "std_health_score":  0.22144306114701923,
+                                                       "mean_nudges":  23.96,
+                                                       "mean_nudge_fraction":  0.8557142857142856,
+                                                       "mean_response_rate":  0.30908332404597044,
+                                                       "mean_habituation":  1.9393103448275866
+                                                   }
+                                               ],
+                       "sample_episode":  {
+                                              "seed":  100042,
+                                              "discounted_return":  15.340459584939543,
+                                              "undiscounted_return":  17.333333333333332,
+                                              "total_reward":  17.333333333333332,
+                                              "mean_health_score":  0.6149425287356323,
+                                              "total_nudges":  28,
+                                              "nudge_days_fraction":  1.0,
+                                              "response_count":  6,
+                                              "response_rate":  0.21428571428571427,
+                                              "mean_habituation":  2.206896551724138,
+                                              "final_habituation":  3,
+                                              "habituation_trajectory":  [
+                                                                             0,
+                                                                             0,
+                                                                             0,
+                                                                             0,
+                                                                             1,
+                                                                             1,
+                                                                             1,
+                                                                             1,
+                                                                             1,
+                                                                             2,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3,
+                                                                             3
+                                                                         ],
+                                              "health_trajectory":  [
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  0,
+                                                                            "stress":  2,
+                                                                            "habituation":  0
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  1,
+                                                                            "stress":  2,
+                                                                            "habituation":  0
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  1,
+                                                                            "stress":  2,
+                                                                            "habituation":  0
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  2,
+                                                                            "habituation":  0
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  2,
+                                                                            "habituation":  1
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  1
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  1
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  1
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  1
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  2
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  2,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  0,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  1,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        },
+                                                                        {
+                                                                            "sleep":  2,
+                                                                            "activity":  1,
+                                                                            "stress":  1,
+                                                                            "habituation":  3
+                                                                        }
+                                                                    ],
+                                              "action_sequence":  [
+                                                                      2,
+                                                                      1,
+                                                                      1,
+                                                                      2,
+                                                                      2,
+                                                                      2,
+                                                                      2,
+                                                                      2,
+                                                                      2,
+                                                                      3,
+                                                                      3,
+                                                                      3,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      1,
+                                                                      2,
+                                                                      2,
+                                                                      2
+                                                                  ],
+                                              "reward_sequence":  [
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.8333333333333334,
+                                                                      0.8333333333333334,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.8333333333333334,
+                                                                      0.8333333333333334,
+                                                                      0.8333333333333334,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.5,
+                                                                      0.5,
+                                                                      0.5,
+                                                                      0.5,
+                                                                      0.5,
+                                                                      0.3333333333333333,
+                                                                      0.3333333333333333,
+                                                                      0.3333333333333333,
+                                                                      0.5,
+                                                                      0.5,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666,
+                                                                      0.6666666666666666
+                                                                  ],
+                                              "response_sequence":  [
+                                                                        true,
+                                                                        true,
+                                                                        true,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        true,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        true,
+                                                                        false,
+                                                                        true,
+                                                                        false,
+                                                                        false,
+                                                                        false
+                                                                    ]
+                                          }
+                   },
+    "training_metrics":  null
+}
